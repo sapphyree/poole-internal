@@ -1,0 +1,33 @@
+<!-- templates/profile.html -->
+
+{% include "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  Welcome, {{ name }}!
+</h1>
+
+<form method="POST" action="/createWiki">
+  <div class="field">
+      <div class="control">
+          <input class="input is-large" type="text" name="title" placeholder="title" autofocus="">
+      </div>
+  </div>
+
+  <div class="field">
+      <div class="control">
+          <input class="input is-large" type="text" name="image" placeholder="image" autofocus="">
+      </div>
+  </div>
+
+  <div class="field">
+      <div class="control">
+          <input class="input is-large" type="text" name="description" placeholder="description">
+      </div>
+  </div>
+
+  <button class="button is-block is-info is-large is-fullwidth">Make Wiki</button>
+</form>
+
+
+{% endblock %}

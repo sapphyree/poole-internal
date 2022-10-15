@@ -1,0 +1,32 @@
+<!-- templates/profile.html -->
+
+{% include "base.html" %}
+
+{% block content %}
+
+<style>
+    img {
+        height: 300px;
+        margin-left: auto;
+    }
+
+    h1 {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: xx-large;
+        width: 200px;
+    }
+</style>
+
+<div>
+    <h1>{{wiki.title}}</h1>
+    <div>
+        <img src="{{wiki.image}}">
+        <p>
+            {{wiki.description}}
+        </p>
+    </div>
+</div>
+
+
+{% endblock %}
