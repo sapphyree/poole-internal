@@ -4,3 +4,4 @@
 # Other
 __pycache__
 .env
+.vscode/*
