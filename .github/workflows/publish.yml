@@ -14,5 +14,5 @@ jobs:
     - name: Build the hello-docker Docker image
       run: |
             docker build . --tag ghcr.io/sapphyree/poole-internal:latest
-#            docker run ghcr.io/sapphyree/poole-internal:latest
             docker push ghcr.io/sapphyree/poole-internal:latest
+#            docker run ghcr.io/sapphyree/poole-internal:latest
